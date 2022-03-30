@@ -1,0 +1,312 @@
+
+
+/* ===== aside ===== */
+
+
+aside {
+    height: 100vh;
+}
+
+
+aside .top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4rem;
+}
+
+
+aside .logo {
+    display: flex;
+    gap: 0.8rem;
+}
+
+
+aside .logo img {
+    width: 2rem;
+    height: 2rem;
+}
+
+
+aside .close {
+    display: none;
+}
+
+
+aside .nav {
+    display: flex;
+    flex-direction: column;
+    height: 86vh;
+    position: relative;
+    top: 3rem;
+}
+
+
+aside h3 {
+    font-weight: 500;
+}
+
+
+aside .nav a {
+    display: flex;
+    color: var(--color-info-dark);
+    margin-left: 2rem;
+    gap: 1rem;
+    align-items: center;
+    position: relative;
+    height: 3.7rem;
+    transition: all 300ms ease;
+}
+
+
+aside .nav a span {
+    font-size: 1.6rem;
+    transition: all 300ms ease;
+}
+
+
+aside .nav a:last-child {
+    position: absolute;
+    bottom: 4.5rem;
+    width: 100%;
+}
+
+
+aside .nav a:hover span {
+    margin-left: 1rem;
+}
+
+
+/* ===== main ===== */
+
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main form {
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+main form input {
+    font-family: poppins, sans-serif;
+    font-weight: 450;
+    width: 25rem;
+    padding: 1.2rem 2rem;
+    margin-top: 1.5rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-3);
+    color: var();
+    transition: all 300ms ease;
+}
+
+
+main form span {
+    margin-top: 3px;
+    margin-left: 5px;
+    font-weight: 500;
+}
+
+
+main form input[ type='submit' ] {
+    font-weight: 700;
+    background-color: transparent;
+    border: 2px dashed var(--color3);
+    color: var(--color3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+main form input[ type='submit' ]:hover {
+    background: var(--color3);
+    color: var(--color-white);
+}
+
+
+main form input[ type='file' ] {
+    display: none;
+}
+
+
+main form label {
+    cursor: pointer;
+    font-family: poppins, sans-serif;
+    font-weight: 450;
+    width: 25rem;
+    padding: 1.2rem 2rem;
+    margin-top: 1.5rem;
+    background: var(--color-white);
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius-3);
+    color: var(--color-info-dark);
+    transition: all 300ms ease;
+}
+
+
+main form p {
+    margin-top: 10px;
+    display: none;
+}
+
+
+main form p a {
+    color: var(--color2);
+    font-weight: 500;
+}
+
+
+
+/* ===== right ===== */
+
+
+.right {
+    height: 100vh;
+    margin-top: 3.5rem;
+}
+
+
+.right .top {
+    display: flex;
+    justify-content: end;
+    gap: 2rem;
+}
+
+
+.right .top button {
+    display: none;
+}
+
+
+.right .theme-toggler {
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.6rem;
+    width: 4.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+}
+
+
+.right .theme-toggler span {
+    font-size: 1.2rem;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.right .theme-toggler span.active {
+    background: var(--color1);
+    color: white;
+    border-radius: var(--border-radius-1);
+}
+
+
+.right .top .profile {
+    display: flex;
+    gap: 2.5rem;
+    text-align: right;
+}
+
+
+.right .top .people {
+    width: 2.8rem;
+    height: 2.8rem;
+    border-radius: 50%;
+    overflow: hidden;
+    background: var(--color1);
+}
+
+
+.right .actual-people .item {
+    background: var(--color-white);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.7rem;
+    padding: 1.4rem var(--card-padding);
+    border-radius: var(--border-radius-3);
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.right .actual-people .add-people {
+    width: 22rem;
+    position: absolute;
+    bottom: 3rem;
+    margin-top: 1.5rem;
+    background-color: transparent;
+    border: 2px dashed var(--color2);
+    color: var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+
+.right .actual-people .add-people div {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+
+.right .actual-people .add-people div h3 {
+    font-weight: 600;
+}
+
+
+.right .actual-people .add-people:hover {
+    background: var(--color2);
+    color: var(--color-white);
+}
+
+
+
+/* ===== media queries 1400px ===== */
+
+
+@media screen and ( max-width: 1400px ){
+
+
+    body {
+        overflow: visible;
+        overflow-x: hidden;
+    }
+
+
+    .container {
+        width: 94%;
+    }
+
+
+    aside .logo h2 {
+        display: none;
+    }
+
+
+    aside .logo img {
+        margin-left: 2rem;
+    }
+
+
+}
+

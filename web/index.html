@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jugar</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logoTop.png">
+    <!-- material cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+        <!-- emergentWindows -->
+        <div class="windows"></div>
+        <div class="forms formCont1">
+            <form action="./prepartidaNormal.html">
+                <small>Partida pública</small>
+                <div class="actions">
+                    <input type="text" placeholder="Nombre">
+                    <input type="submit" value="Crear" class="primary">
+                </div>
+            </form>
+            <form action="./prepartidaNormal.html">
+                <small>Partida privada</small>
+                <div class="actions">
+                    <input type="text" placeholder="Nombre">
+                    <input type="submit" value="Crear" class="danger">
+                </div>
+            </form>
+            <form action="./prepartidaNormal.html">
+                <small>Unirse a privada</small>
+                <div class="actions">
+                    <input type="text" placeholder="Código">
+                    <input type="submit" value="Unirse" class="success">
+                </div>
+            </form>
+        </div>
+        <div class="forms formCont2">
+            <form action="">
+                <small>Añadir amigo</small>
+                <div class="actions">
+                    <input type="text" placeholder="Id de jugador">
+                    <input type="submit" value="Añadir" class="primary">
+                </div>
+            </form>
+        </div>
+        <div class="forms formCont3">
+            <form action="./progreso.html" id="aceptar">
+                <small>No puedes jugar si estas en dispositivo mobil</small>
+                <div class="actions">
+                    <input type="submit" value="Aceptar" class="primary all" id="aceptar">
+                </div>
+            </form>
+        </div>
+
+        <!-- aside -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.PNG" id="logo" alt="mekymaa">
+                    <h2><span class="danger">MEKY</span>MAA</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="./index.html" class="active ocult">
+                    <span class="material-icons-sharp">play_arrow</span>
+                    <h3>Jugar</h3>
+                </a>
+                <a href="./progreso.html">
+                    <span class="material-icons-sharp">line_axis</span>
+                    <h3>Progreso</h3>
+                </a>
+                <a href="./ranking.html">
+                    <span class="material-icons-sharp">leaderboard</span>
+                    <h3>Ranking</h3>
+                </a>
+                <a href="./social.html">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Social</h3>
+                    <span class="message-count">18</span>
+                </a>
+                <a href="./ajustes.html">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Ajustes</h3>
+                </a>
+                <a href="./iniciarSesion.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Cerrar sesión</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- main -->
+        <main>
+            <h1>Modos de juego</h1>
+            <div class="cards">
+                <div class="card1">
+                    <a href="./gameEntrenamiento.html" id="gameEntrenamiento">
+                        <span class="material-icons-sharp">smart_toy</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Entrenamiento</h3>
+                            </div>
+                        </div>
+                        <small class="small-text">En este modo podrás aprender a mecanografiar, con una ia que será tu sensei, te mostrará tus errores y como dejar de cometerlos</small>
+                    </a>
+                </div>
+                <div class="card2" id="windowsNormal" id="gameNormal">
+                    <a href="#" >
+                        <span class="material-icons-sharp">games</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Normal</h3>
+                            </div>
+                        </div>
+                        <small class="small-text">Aqui podras entrar o crear tus propias salas publicas / privadas, para enfrentarte contra otros jugadores y ver quien es el que teclea mas rápido</small>
+                    </a>
+                </div>
+                <div class="card3" id="gameClasificatoria">
+                    <a href="./gameClasificatoria.html" id="gameNormal">
+                        <span class="material-icons-sharp">stacked_line_chart</span>
+                        <div class="middle">
+                            <div class="left">
+                                <h3>Clasificatoria</h3>
+                            </div>
+                        </div>
+                        <small class="small-text">Entra a un enfrentamiento uno contra uno para ver quien copia el texto en pantalla primero, en este modo podrás incrementar tus mp's (mekypoints)</small>
+                    </a>
+                </div>
+            </div>
+            <div class="table-button">
+                <h1>Partidas por comenzar</h1>
+                <div class="scroll">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="ocult">Anfitrion</th>
+                                <th class="ocult">Nombre de partida</th>
+                                <th>Jugadores en sala</th>
+                                <th>¿Deseas unirte?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ocult">LicAaron</td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                            <tr>
+                                <td class="ocult">AnonymusPro</td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                            <tr>
+                                <td class="ocult">Veggetta 777  </td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                            <tr>
+                                <td class="ocult">bbakka</td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                            <tr>
+                                <td class="ocult">hola</td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                            <tr>
+                                <td class="ocult">tobi_ttdy_111</td>
+                                <td class="ocult">Aki va el nombre</td>
+                                <td class="success" >15/30</td>
+                                <td><a href="./prepartidaNormal.html" class="notPass">Unirme</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </main>
+
+        <!-- right -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp">light_mode</span>
+                    <span class="material-icons-sharp active">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola, <b>Fernando</b></p>
+                        <small class="small-text">Binvenido!</small>
+                    </div>
+                    <div class="profile-photo">
+                        <div><img src="../images/persona0.jpg" alt="example"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-people">
+                <a href="./licAaron.html">
+                    <div class="item online">
+                        <div><img src="../images/persona5.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>LicAaron</h3>
+                                <small class="small-text">En partida clasificatoria</small>
+                            </div>
+                            <h3 class="success">+ 350 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona4.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>angel_r</h3>
+                                <small class="small-text">En partida normal</small>
+                            </div>
+                            <h3 class="success">+ 340 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona6.jfif" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>tobi_ttdy_111</h3>
+                                <small class="small-text">Conectado</small>
+                            </div>
+                            <h3 class="success">+ 280 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona7.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>DanDr007</h3>
+                                <small class="small-text">Conectado</small>
+                            </div>
+                            <h3 class="success">+ 180 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <span class="people"></span>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Horchata</h3>
+                                <small class="small-text">Desconectado</small>
+                            </div>
+                            <h3 class="success">+ 100 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <img src="../images/persona2.jpg" alt="example">
+                        <div class="right">
+                            <div class="info">
+                                <h3>Soy Dalto</h3>
+                                <small class="small-text">Desconectado</small>
+                            </div>
+                            <h3 class="success">+ 3500 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" id="windowsAdd">
+                    <div class="item add-people">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Añadir amigo</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="../javascripts/main.js"></script>
+        <script src="../javascripts/msgNormal.js"></script>
+
+    </div>
+
+</body>
+</html>

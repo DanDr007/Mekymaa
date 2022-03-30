@@ -1,0 +1,827 @@
+
+
+/* ===== windows ===== */
+
+
+.windows {
+    position: absolute;
+    top: -100%;
+    opacity: .5;
+    z-index: 90;
+    width: 100%;
+    height: 100%;
+    background: var(--color-white);
+    transition: 400ms all ease;
+}
+
+
+.forms {
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: auto;
+    background: var(--color-background);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 2.5rem;
+    transition: 400ms all ease;
+}
+
+
+.forms form {
+    margin: .5rem;
+    width: 100%;
+}
+
+
+.forms form .actions {
+    margin-top: 0.2rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.forms form input {
+    padding: .7rem;
+    border-radius: var(--border-radius-2);
+    font-family: poppins;
+    font-size: 0.8rem;
+}
+
+
+.forms form input.hidden {
+    display: none;
+}
+
+
+.forms form input[ type = 'text' ] {
+    width: 65%;
+    padding-left: 1rem;
+    background: var(--color-white);
+    color: var(--color-info-dark);
+}
+
+
+.forms form input[ type = 'text' ]::placeholder {
+    color: var(--color-info-dark);
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.forms form input[ type = 'submit' ] {
+    padding: 0.6rem;
+    width: 32%;
+    background: none;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+
+.forms form input[ type = 'submit' ].all {
+    padding: 0.8rem;
+    width: 100%;
+    background: none;
+    font-weight: 450;
+    cursor: pointer;
+}
+
+
+.forms form input[ type = 'submit' ].primary {
+    color: var(--color1);
+    border: 2px dashed var(--color1);
+}
+
+
+.forms form input[ type = 'submit' ].primary:hover {
+    color: var(--color-white);
+    background: var(--color1);
+}
+
+
+.forms form input[ type = 'submit' ].danger {
+    color: var(--color2);
+    border: 2px dashed var(--color2);
+}
+
+
+.forms form input[ type = 'submit' ].danger:hover {
+    color: var(--color-white);
+    background: var(--color2);
+}
+
+
+.forms form input[ type = 'submit' ].success {
+    color: var(--color3);
+    border: 2px dashed var(--color3);
+}
+
+
+.forms form input[ type = 'submit' ].success:hover {
+    color: var(--color-white);
+    background: var(--color3);
+}
+
+
+/* ===== preload ===== */
+
+
+.preload {
+    position: absolute;
+    top: 0%;
+    width: 97%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-background);
+    z-index: 200;
+}
+
+
+.preload img {
+    width: 14rem;
+    margin-right: 3rem;
+}
+
+
+.preload .textPreload h1 {
+    font-size: 4rem;
+}
+
+
+/* ===== CORRECTIONS ====== */
+
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+
+.container {
+    grid-template-columns: 20rem auto 20rem;
+}
+
+
+.right .indications {
+    width: 19.5rem;
+    position: absolute;
+    bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+}
+
+
+.right .indications p {
+    width: 100%;
+    text-align: right;
+}
+
+
+/* ===== game ===== */
+
+
+.game {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game .cardGame {
+    position: absolute;
+    top: 10rem;
+    width: 57rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.game .cardGame .player {
+    width: 20rem;
+    background: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+    margin-top: 1rem;
+    box-shadow: var(--box-shadow);
+    transition: all 300ms ease;
+}
+
+
+.game .cardGame .player:last-child {
+    margin-left: 2rem;
+}
+
+
+.game .cardGame .player:first-child {
+    margin-right: 2rem;
+}
+
+
+.game .cardGame .player:hover {
+    box-shadow: none;
+}
+
+
+.game .cardGame .player:hover span {
+    padding: 0.5rem;
+    border-radius: 50%;
+    color: var(--color-white);
+    font-size: 2rem;
+}
+
+
+.game .cardGame .player .info {
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    align-items: center;
+}
+
+
+.game .cardGame .player .info img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    margin-right: 2rem;
+}
+
+
+.game .cardGame .player h3 {
+    margin-top: .5rem;
+}
+
+
+.game .cardGame span {
+    color: var(--color-white);
+    background: var(--color2);
+}
+
+
+.game .text {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.game video {
+    width: 20rem;
+    height: 12rem;
+}
+
+
+.game img {
+    width: 20rem;
+    height: 12rem;
+}
+
+
+.game .responsive {
+    position: absolute;
+    bottom: 3rem;
+    display: none;
+}
+
+
+.game .responsive input {
+    position: absolute;
+    bottom: 0;
+    margin-top: 5rem;
+    width: 100%;
+    height: 3rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding-left: 1.5rem;
+    font-family: poppins;
+    color: var(--color-info-dark);
+    font-size: 0.8rem;
+}
+
+
+.game .responsive input::placeholder {
+    font-family: poppins;
+    color: var(--color-info-dark);
+    font-size: 0.8rem;
+}
+
+
+.game .cardGame p {
+    text-align: center;
+    padding: 2rem;
+    background: var(--color-white);
+    border-radius: var(--card-border-radius);
+    box-shadow: var(--box-shadow);
+}
+
+
+.gameKeyboard {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-family: poppins;
+}
+
+
+body, .row, .row div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.keyboardL {
+    position: absolute;
+    left: 10rem;
+    top: 41%;
+}
+
+.keyboardR {
+    position: absolute;
+    right: 10rem;
+    top: 41%;
+}
+
+
+.keyboardL .row:nth-child(1) .key:nth-child(1) {
+    margin-left: 3.5rem;
+}
+
+
+.keyboardR .row:nth-child(1) .key:nth-child(1) {
+    margin-left: -3.5rem;
+}
+
+.keyboardL .row div {
+    background: transparent;
+    box-shadow: var(--box-shadow);
+    border: 1.5px solid var(--color-dark);
+    border-radius: 0.1rem;
+    color: var(--color-dark);
+    width: 4rem;
+    height: 4rem;
+    margin: 0.2rem;
+    transform: skew( -15deg );
+    font-weight: 500;
+}
+
+
+.keyboardR .row div {
+    background: transparent;
+    box-shadow: var(--box-shadow);
+    border: 1.5px solid var(--color-dark);
+    border-radius: 0.1rem;
+    color: var(--color-dark);
+    width: 4rem;
+    height: 4rem;
+    margin: 0.2rem;
+    transform: skew( 15deg );
+    font-weight: 500;
+}
+
+
+.keyboardL .row .space {
+    width: 15rem;
+}
+
+
+.keyboardR .row .space {
+    width: 15rem;
+}
+
+
+/* ===== media queries 1600px ===== */
+
+
+@media screen and ( max-width: 1600px ) {
+
+
+    .game .cardGame {
+        width: 40rem;
+        top: 8rem;
+    }
+
+
+    .game video {
+        width: 15rem;
+        height: 10rem;
+    }
+
+
+    .game img {
+        width: 15rem;
+        height: 10rem;
+    }
+
+
+}
+
+
+/* ===== media queries 1400px ===== */
+
+
+@media screen and ( max-width: 1400px ) {
+
+
+    .game .cardGame {
+        top: 9rem;
+    }
+
+
+    aside .logo img {
+        margin-left: 0;
+    }
+
+
+    aside .top h2 {
+        display: block;
+    }
+
+
+    .game .cardGame {
+        top: 8rem;
+    }
+
+
+    .keyboardL .row .none {
+        display: none;
+    }
+
+
+    .keyboardR .row .none {
+        display: none;
+    }
+
+
+}
+
+
+/* ===== media queries 1150px ===== */
+
+
+@media screen and ( max-width: 1150px ) {
+
+
+    .game .cardGame {
+        top: 9rem;
+    }
+
+
+    .game .cardGame {
+        width: 40rem;
+        top: 12rem;
+    }
+
+
+    .game video {
+        width: 12rem;
+        height: 8rem;
+    }
+
+
+    .game img {
+        width: 12rem;
+        height: 8rem;
+    }
+
+
+    .keyboardL {
+        top: 50%;
+    }
+
+
+    .keyboardL .row .none2 {
+        display: none;
+    }
+
+
+    .keyboardR {
+        top: 50%;
+    }
+
+
+    .keyboardR .row .none2 {
+        display: none;
+    }
+
+
+    .game .cardGame p {
+        font-size: 0.8rem;
+        padding: 1.5rem;
+    }
+
+
+}
+
+
+/* ===== media queries 1000px ===== */
+
+
+@media screen and ( max-width: 1000px ) {
+
+
+    .game .cardGame {
+        top: 40%;
+    }
+
+
+    .keyboardL {
+        display: none;
+    }
+
+
+    .keyboardR {
+        display: none;
+    }
+
+
+}
+
+
+/* ===== media queries 800px ===== */
+
+
+@media screen and ( max-width: 800px ) {
+
+
+    .game .cardGame {
+        top: 33%;
+        width: 50%;
+    }
+
+
+}
+
+
+/* ===== media queries 768px ===== */
+
+
+@media screen and ( max-width: 768px ) {
+
+
+    body {
+        width: 100%;
+        height: 100vw;
+        overflow: hidden;
+    }
+
+
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+
+    .preload img {
+        display: none;
+    }
+
+
+    .preload .textPreload h1 {
+        font-size: 4rem;
+    }
+
+
+    aside .top .logo,
+    aside .nav p,
+    aside .nav h1 {
+        margin-left: 2rem;
+    }
+
+
+    .game .cardGame {
+        top: 40%;
+        width: 90%;
+    }
+
+
+    .game .responsive {
+        display: block;
+        position: absolute;
+        width: 67%;
+        top: 50%;
+        left: 17%;
+    }
+
+
+    .game video {
+        display: none;
+    }
+
+
+    .game img {
+        display: none;
+    }
+
+
+
+    aside {
+        position: fixed;
+        left: -100%;
+        background: var(--color-white);
+        width: 18rem;
+        z-index: 3;
+        box-shadow: 1rem 3rem 4rem var(--color-light);
+        height: 100vh;
+        padding-right: var(--card-padding);
+        display: none;
+        animation: showMenu 400ms ease forwards;
+    }
+
+
+    @keyframes showMenu {
+        to {
+            left: 0;
+        }
+    }
+
+
+    aside .logo h2 {
+        display: inline;
+    }
+
+
+    aside .nav h3 {
+        display: inline;
+    }
+
+
+    aside .nav a {
+        width: 100%;
+        height: 3.4rem;
+    }
+
+
+    aside .nav a:last-child {
+        position: absolute;
+        bottom: 4.5rem;
+    }
+
+
+    aside .close {
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    main {
+        margin-top: 8rem;
+        padding: 0 1rem;
+    }
+
+
+    main .table-button {
+        position: relative;
+        margin: 3rem 0 0 0;
+        width: 100%;
+        left: 50%;
+    }
+
+
+    main .table-button .ocult {
+        display: none;
+    }
+
+
+    main .table-button table {
+        width: 100%;
+        margin: 0;
+    }
+
+
+    .right {
+        width: 94%;
+        margin: 0 auto 4rem;
+    }
+
+
+    .right .top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        align-items: center;
+        padding: 0 0.8rem;
+        height: 4.6rem;
+        background: var(--color-white);
+        width: 100%;
+        margin: 0;
+        z-index: 2;
+        box-shadow: 0 1rem 1rem var(--color-light);
+    }
+
+
+    .right .top .theme-toggler {
+        width: 4.4rem;
+        position: absolute;
+        left: 66%;
+    }
+
+
+    .right .profile .info {
+        display: none;
+    }
+
+
+    .right .top button {
+        display: inline-block;
+        background: transparent;
+        cursor: pointer;
+        color: var(--color-dark);
+        position: absolute;
+        left: 1rem;
+    }
+
+
+    .right .top button span {
+        font-size: 2rem;
+    }
+
+
+    .right .indications {
+        display: none;
+    }
+
+
+}
+
+
+/* ===== media queries 350px ===== */
+
+
+@media screen and ( max-width: 350px ) {
+
+
+    body {
+        width: 100%;
+        height: 100vw;
+        overflow: hidden;
+    }
+
+
+    .preload .textPreload h1 {
+        font-size: 2rem;
+    }
+
+
+    .preload .textPreload p {
+        font-size: .5rem;
+    }
+
+
+    .right .top .profile {
+        display: none;
+    }
+
+
+    .right .top .theme-toggler {
+        position: absolute;
+        left: 75%;
+    }
+
+
+    main .table-button .ocult2 {
+        display: none;
+    }
+
+
+    main .table-button {
+        margin: 0;
+        width: 0;
+        height: 0;
+        padding: 0;
+    }
+
+
+    .game .cardGame {
+        top: 30%;
+        width: 96%;
+    }
+
+
+    .game .cardGame p {
+        font-size: 0.6rem;
+    }
+
+
+
+}

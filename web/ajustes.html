@@ -1,0 +1,238 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajustes</title>
+    <!-- icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="../images/logoTop.png">
+    <!-- material cdn -->
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="../styles/styles.css">
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+
+
+
+<body>
+
+    <div class="container">
+
+        <!-- emergentWindows -->
+        <div class="windows"></div>
+        <div class="forms formCont2">
+            <form action="">
+                <small>Añadir amigo</small>
+                <div class="actions">
+                    <input type="text" placeholder="Id de jugador">
+                    <input type="submit" value="Añadir" class="primary">
+                </div>
+            </form>
+        </div>
+        <div class="forms formCont3">
+            <form action="">
+                <small>¿Estas seguro de querer eliminar tu cuenta?</small>
+                <div class="actions">
+                    <input type="text" placeholder="Escribe tu contraseña">
+                    <input type="submit" value="Eliminar" class="primary">
+                </div>
+            </form>
+        </div>
+
+        <!-- aside -->
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../images/logo.PNG" id="logo" alt="mekymaa">
+                    <h2><span class="danger">MEKY</span>MAA</h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+            <div class="nav">
+                <a href="./index.html" class="ocult">
+                    <span class="material-icons-sharp">play_arrow</span>
+                    <h3>Jugar</h3>
+                </a>
+                <a href="./progreso.html">
+                    <span class="material-icons-sharp">line_axis</span>
+                    <h3>Progreso</h3>
+                </a>
+                <a href="./ranking.html">
+                    <span class="material-icons-sharp">leaderboard</span>
+                    <h3>Ranking</h3>
+                </a>
+                <a href="./social.html">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Social</h3>
+                    <span class="message-count">18</span>
+                </a>
+                <a href="./ajustes.html" class="active">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Ajustes</h3>
+                </a>
+                <a href="./iniciarSesion.html">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Cerrar sesión</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- main -->
+        <main>
+            <h1>Información</h1>
+            <div class="cards">
+                <div class="card1">
+                    <img src="../images/persona0.jpg" alt="persona1" class="profile-photo">
+                    <div class="middle">
+                        <div class="left">
+                            <h3 class="primary">Fernando</h3>
+                            <h1>240pm</h1>
+                        </div>
+                    </div>
+                    <small class="small-text">Correo: victorroblesweb@gmail.com <br>id: 73042742348249</small>
+                </div>
+                <div class="actions">
+                    <a href="./modificarDatos.html" class="success">Modificar datos del perfil</a>
+                    <a href="./cambiarContraseña.html" class="primary">Cambiar contraseña</a>
+                    <a href="#" id="windowsDelete" class="danger">Eliminar cuenta</a>
+                </div>
+                <div class="card3">
+                    <div class="color">
+                        <input type="color" value="#7380ec" id="color1"><p>Color primario</p>
+                    </div>
+                    <div class="color">
+                        <input type="color" value="#ff7782" id="color2"><p>Color secundario</p>
+                    </div>
+                    <div class="color">
+                        <input type="color" value="#41f1b6" id="color3"><p>Color terciario</p>
+                    </div>
+                    <div>
+                        <a href="./ajustes.html"><small class="small-text">¿Ya terminaste?<br> Guarda cambios y mira la magia</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="table-button">
+            </div>
+        </main>
+
+        <!-- right -->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp">light_mode</span>
+                    <span class="material-icons-sharp active">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hola, <b>Fernando</b></p>
+                        <small class="small-text">Binvenido!</small>
+                    </div>
+                    <div class="profile-photo">
+                        <div><img src="../images/persona0.jpg" alt="example"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="actual-people">
+                <a href="./licAaron.html">
+                    <div class="item online">
+                        <div><img src="../images/persona5.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>LicAaron</h3>
+                                <small class="small-text">En partida clasificatoria</small>
+                            </div>
+                            <h3 class="success">+ 350 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona4.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>angel_r</h3>
+                                <small class="small-text">En partida normal</small>
+                            </div>
+                            <h3 class="success">+ 340 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona6.jfif" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>tobi_ttdy_111</h3>
+                                <small class="small-text">Conectado</small>
+                            </div>
+                            <h3 class="success">+ 280 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <div><img src="../images/persona7.jpg" alt="example"></div>
+                        <div class="right">
+                            <div class="info">
+                                <h3>DanDr007</h3>
+                                <small class="small-text">Conectado</small>
+                            </div>
+                            <h3 class="success">+ 180 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <span class="people"></span>
+                        <div class="right">
+                            <div class="info">
+                                <h3>Horchata</h3>
+                                <small class="small-text">Desconectado</small>
+                            </div>
+                            <h3 class="success">+ 100 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="">
+                    <div class="item online">
+                        <img src="../images/persona2.jpg" alt="example">
+                        <div class="right">
+                            <div class="info">
+                                <h3>Soy Dalto</h3>
+                                <small class="small-text">Desconectado</small>
+                            </div>
+                            <h3 class="success">+ 3500 mp</h3>
+                        </div>
+                    </div>
+                </a>
+                <a href="#" id="windowsAdd">
+                    <div class="item add-people">
+                        <div>
+                            <span class="material-icons-sharp">add</span>
+                            <h3>Añadir amigo</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="../javascripts/main.js"></script>
+        <script src="../javascripts/colors.js"></script>
+        <script src="../javascripts/msgAdd.js"></script>
+        <script src="../javascripts/msgDelete.js"></script>
+
+    </div>
+
+</body>
+</html>
